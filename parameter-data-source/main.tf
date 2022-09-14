@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 data "aws_ssm_parameter" "foo" {
-  name = "mutable.cart.dev.CATALOGUE_HOST"
+  name = "mutable.docdb.dev.credentials"
 }
 
 resource "local_file" "foo" {
